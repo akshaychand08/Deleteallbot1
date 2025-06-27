@@ -129,5 +129,5 @@ TL_FILE_TYPES = (
 )
 
 AUTO_DELETE_TIME = int(get_config("AUTO_DELETE_TIME", 0))
-AUTH_GROUP = [int(i.strip()) for i in get_config("AUTH_GROUP", []).split("-1002575153636,"-1001779363583)] if get_config("AUTH_GROUP", []) else []
+AUTH_GROUP = [int(i.strip()) for i in get_config("AUTH_GROUP", []).split(",")] if get_config("AUTH_GROUP", []) else []
 print(AUTH_GROUP)
